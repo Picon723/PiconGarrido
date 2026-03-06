@@ -54,7 +54,7 @@ public class Main {
                     float saldoCliente = 0;
 
                     while (true){
-                        if (Teclado.hasNextInt()){
+                        if (Teclado.hasNextFloat()){
                             saldoCliente = Teclado.nextFloat();
 
                             if (saldoCliente > 0){
@@ -171,3 +171,4 @@ public class Main {
         }
     }
 }
+
