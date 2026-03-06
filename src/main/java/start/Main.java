@@ -61,12 +61,12 @@ public class Main {
                                 break;
                             } else {
                                 System.out.println("* Este valor no es valido *");
-                                System.out.println("Ingrese su cedula correctamente: ");
+                                System.out.println("Ingrese su saldo correctamente: ");
                             }
 
                         } else {
                             System.out.println("* Ingrese solo numeros *");
-                            System.out.println("Ingrese su cedula correctamente: ");
+                            System.out.println("Ingrese su saldo correctamente: ");
                             Teclado.next();
                         }
                     }
@@ -83,19 +83,19 @@ public class Main {
                         saldoCliente = 0;
 
                         while (true){
-                            if (Teclado.hasNextInt()){
+                            if (Teclado.hasNextFloat()){
                                 saldoCliente = Teclado.nextFloat();
 
                                 if (saldoCliente > 0){
                                     break;
                                 } else {
                                     System.out.println("* Este valor no es valido *");
-                                    System.out.println("Ingrese su cedula correctamente: ");
+                                    System.out.println("Ingrese su saldo correctamente: ");
                                 }
 
                             } else {
                                 System.out.println("* Ingrese solo numeros *");
-                                System.out.println("Ingrese su cedula correctamente: ");
+                                System.out.println("Ingrese su saldo correctamente: ");
                                 Teclado.next();
                             }
                         }
@@ -116,19 +116,19 @@ public class Main {
                         saldoCliente = 0;
 
                         while (true){
-                            if (Teclado.hasNextInt()){
+                            if (Teclado.hasNextFloat()){
                                 saldoCliente = Teclado.nextFloat();
 
                                 if (saldoCliente > 0 || saldoCliente > cliente.getSaldo()){
                                     break;
                                 } else {
                                     System.out.println("* Este valor no es valido *");
-                                    System.out.println("Ingrese su cedula correctamente: ");
+                                    System.out.println("Ingrese su saldo correctamente: ");
                                 }
 
                             } else {
                                 System.out.println("* Ingrese solo numeros *");
-                                System.out.println("Ingrese su cedula correctamente: ");
+                                System.out.println("Ingrese su saldo correctamente: ");
                                 Teclado.next();
                             }
                         }
@@ -171,4 +171,5 @@ public class Main {
         }
     }
 }
+
 
